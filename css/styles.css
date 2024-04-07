@@ -73,9 +73,11 @@ p, .paragraphh{
         color: #fff;
                 cursor:pointer;
 }
-.button-order:hover{
+.button-order:hover ,
+.button-order:focus {
         background-color: #404BBF;
     }
+
 
 
 h1, .caption {
