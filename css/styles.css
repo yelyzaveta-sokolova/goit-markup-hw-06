@@ -4,13 +4,6 @@ body{
     color:#434455;;
 }
 
-nav {
-    display: flex;
-        justify-content: flex-start;
-
-
-}
-
 .logo-head{
         text-transform: uppercase;
     font-family: "Raleway", sans-serif;
@@ -30,9 +23,13 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color:#2e2f42;
 }
-.navi .link:hover, .navi .link:focus{
+.tel .link:hover{
     color: #404bbf;
 }
+
+.tel .link:focus {
+        color: #404bbf;
+    }
 
 .contacts{
     font-style: normal;
@@ -60,10 +57,9 @@ p, .paragraph2{
 }
 .button-order {
 
-        justify-content: flex-start;
     font-weight: 500;
 
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
             background: #4d5ae5;
     font-size: 16px;
         line-height: 1.5;
