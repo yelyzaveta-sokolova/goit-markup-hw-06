@@ -28,19 +28,7 @@ img{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 /* ===========CONTAINER=========== */
 .container {
     max-width: 1158px;
@@ -50,10 +38,8 @@ img{
     padding-right: 15px;
 }
 /* ===========HEADER=========== */
-/* .page-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
-} */
+.page-header{border-bottom: 1px solid #e7e9fc}
+
 .logo-header{
         text-transform: uppercase;
     font-family: "Raleway", sans-serif;
@@ -63,6 +49,7 @@ font-weight: 700;
     letter-spacing: 0.03em;
     text-decoration: none;
         color: #4d5ae5;
+        margin-right: 76px
   
 }
 .studio {color: #2e2f42
@@ -73,6 +60,7 @@ font-weight: 700;
     display: flex;
  justify-content: space-between;
  align-items: center;
+gap: 40px
 }
 
 .menu-list{
@@ -103,14 +91,14 @@ padding-bottom: 24px;
 
 }
 
-.contacts-item:focus {
+.contacts-item-link:focus {
         color: #404bbf;
     }
 
 .contacts{
     font-style: normal;
 }
-.contacts-item{
+.contacts-item-link{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#434455;
@@ -119,10 +107,7 @@ padding-bottom: 24px;
         padding-bottom: 24px;
 }
 
-.contacts-item .link:focus, .contacts-item .link:hover {color: #404bbf;}
-ul>li>a {
-    text-decoration: none;
-}
+.contacts-item-link:focus, .contacts-item-link:hover {color: #404bbf;}
 
 
 p, .paragraphh{
@@ -132,6 +117,7 @@ p, .paragraphh{
         letter-spacing: 0.02em;
         color: #434455;
       margin-top: 8px;
+ 
 
   
 }
@@ -144,9 +130,7 @@ p, .paragraphh{
 }
 .hero-container{
     padding-top: 188px;
-    padding-left: 331px;
-    padding-right: 331px;
-    padding-bottom: 292px;
+    padding-bottom: 188px;
 }
 .main-title {
     font-weight: 700;
@@ -159,6 +143,7 @@ p, .paragraphh{
     margin-bottom: 48px;
 }
 .button-order {
+    display: block;
     font-weight: 500;
     font-size: 16px;
         line-height: 1.5;
@@ -191,6 +176,23 @@ p, .paragraphh{
         justify-content: flex-start;
 
 }
+
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* ===========CAPTIONS=========== */
 
 
@@ -212,6 +214,8 @@ h3,
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+
 }
 
 /* ===========TEAM=========== */
@@ -220,11 +224,16 @@ h3,
         background: #f4f4fd;
 }
 
+.name-job{
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+}
 .team-list{
     display: flex;
         align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 24px;
   
 }
 .team-list-item {
@@ -234,16 +243,25 @@ border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     height: 380px;
 }
-
+.team-part {
+    text-align: center;
+}
 /* =========== PORTFOLIO =========== */
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-
+    column-gap: 24px;
+row-gap: 48px;
 }
-
-
+.portfolio-list-item{
+width: calc((100% - 48px) / 3);
+}
+.app-typ{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+margin-bottom: 8px;
+}
 /* =========== FOOTER =========== */
 .foot{
     background-color: #2e2f42;
@@ -252,9 +270,8 @@ border-radius: 0 0 4px 4px;
 }
 .page-footer {
     padding-top: 100px;
-    padding-bottom: 10px;
-    padding-left: 156px;
-    padding-right: 1020px;
+    padding-bottom: 100px;
+
     }
 
 .foot-par {
@@ -263,6 +280,7 @@ border-radius: 0 0 4px 4px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
 }
 
 .studio-foot {
@@ -270,7 +288,8 @@ border-radius: 0 0 4px 4px;
 }
 
 .logo-foot{
-   
+    display: inline-block;
+    margin-bottom: 16px;
 text-transform: uppercase;
             font-family: "Raleway", sans-serif;
             font-weight: 700;
