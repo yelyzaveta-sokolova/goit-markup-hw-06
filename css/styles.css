@@ -52,6 +52,9 @@ font-weight: 700;
         margin-right: 76px
   
 }
+.head-pag{
+    display: flex;
+}
 .studio {color: #2e2f42
 ;}
 /* ===========NAVIGATION=========== */
@@ -60,7 +63,7 @@ font-weight: 700;
     display: flex;
  justify-content: space-between;
  align-items: center;
-gap: 40px
+gap:40px
 }
 
 .menu-list{
@@ -129,8 +132,7 @@ p, .paragraphh{
     margin-right: auto;
 }
 .hero-container{
-    padding-top: 188px;
-    padding-bottom: 188px;
+padding: 188px 0;
 }
 .main-title {
     font-weight: 700;
@@ -238,7 +240,7 @@ h3,
 }
 .team-list-item {
     background-color: #FFFFFF;
-    width:  calc((100%-72)/4);
+    width: calc((100% - 72px) /4 );
 border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     height: 380px;
@@ -265,14 +267,9 @@ margin-bottom: 8px;
 /* =========== FOOTER =========== */
 .foot{
     background-color: #2e2f42;
-
+    padding: 100px 0;
 
 }
-.page-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    }
 
 .foot-par {
     font-weight: 400;
@@ -287,7 +284,7 @@ margin-bottom: 8px;
     color: #f4f4fd;
 }
 
-.logo-foot{
+.logo-link-foot{
     display: inline-block;
     margin-bottom: 16px;
 text-transform: uppercase;
