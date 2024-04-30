@@ -343,8 +343,8 @@ transition: transform 250ms
 
 
 
-.portfolio-list-item:hover {
-    transform: translateY(0%);
+.portfolio-list-item:hover .par-over{
+    transform:translateY(0%);
 }
 .par-over{
         overflow: auto;
@@ -409,19 +409,21 @@ text-transform: uppercase;
 }
 
 .footer-media-title{
+            margin-bottom:16px;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        margin-bottom: 16px;
+
 }
 .footer-media-list{
 display: flex;
+    gap: 16px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 16px;
+
 } 
 
 
@@ -433,7 +435,7 @@ display: flex;
 }
 .par-logo{
 margin-right: 120px;
-
+margin-bottom: 16px;
 }
 /* ===========SOCIAL MEDIA ICONS============== */
 
@@ -453,7 +455,7 @@ margin-right: 120px;
 
 .social-list-team{
     display: flex;
-        gap: 16px; 
+        gap: 24px; 
         flex-shrink: 0;
         align-self: flex-end;
         justify-content: center;
