@@ -84,6 +84,7 @@ color:#2e2f42;
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
+position: relative;
 }
 
 .menu-list-item-link:hover{
@@ -94,7 +95,7 @@ padding-bottom: 24px;
 .contacts-item:hover{
     color: #404bbf;
 }
-.menu-list-item-link:active::after{
+.menu-list-item-link:active:after{
 
             width: 100%;
             position: absolute;
@@ -131,6 +132,7 @@ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
         padding-top: 24px;
         padding-bottom: 24px;
+        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item-link:focus, .contacts-item-link:hover {color: #404bbf;}
@@ -280,9 +282,10 @@ h3,
 }
 .team-list{
     display: flex;
+    gap: 24px;
         align-items: center;
         justify-content: center;
-        gap:24px;
+       
   
 }
 .team-list-item {
@@ -294,6 +297,7 @@ border-radius: 0 0 4px 4px;
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+     
 }
 .team-part {
     text-align: center;
@@ -337,7 +341,7 @@ transition: transform 250ms
 
 
 
-.portfolio-list-item:hover .portfolio-overlay{
+.portfolio-list-item:hover .wrapper-portfolio{
     transform: translateY(0%)
 }
 .par-over{
@@ -418,11 +422,14 @@ display: flex;
 } 
 
 
-.foot-wrapper{
+.footer{
     display: flex;
     gap: 16px;
     align-items: baseline;
-    margin-right: 120px;
+ 
+}
+.par-logo{
+margin-right: 120px;
 }
 /* ===========SOCIAL MEDIA ICONS============== */
 
@@ -434,7 +441,7 @@ display: flex;
 .social-list-item{
     width: 40px;
     height: 40px;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -476,4 +483,5 @@ display: flex;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
