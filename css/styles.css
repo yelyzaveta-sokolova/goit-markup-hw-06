@@ -376,9 +376,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .foot{
     background-color: #2e2f42;
     padding: 100px 0;
+    margin-right: 120px;
 
 }
-
+.footer-soc-med{
+margin-right: 120px;
+}
 .foot-par {
     font-weight: 400;
         font-size: 16px;
@@ -408,7 +411,7 @@ text-transform: uppercase;
         
 }
 
-footer-media-parag{
+.footer-media-parag{
           
     font-weight: 500;
         font-size: 16px;
