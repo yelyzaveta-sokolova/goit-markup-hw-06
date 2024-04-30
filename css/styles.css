@@ -95,7 +95,7 @@ position: relative;
 .contacts-item:hover{
     color: #404bbf;
 }
-.menu-list-item-link:active:after{
+.menu-list-item-link::after{
 
             width: 100%;
             position: absolute;
@@ -341,7 +341,7 @@ transition: transform 250ms
 
 
 
-.portfolio-list-item:hover .wrapper-portfolio{
+.portfolio-list-item:hover {
     transform: translateY(0%)
 }
 .par-over{
@@ -384,6 +384,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
+        margin-bottom: 16px;
 }
 
 .studio-foot {
@@ -430,6 +431,7 @@ display: flex;
 }
 .par-logo{
 margin-right: 120px;
+
 }
 /* ===========SOCIAL MEDIA ICONS============== */
 
@@ -442,17 +444,19 @@ margin-right: 120px;
     width: 40px;
     height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    gap:24px;
 
 }
 
 
 .social-list{
     display: flex;
-        gap: 16px;
+        gap: 24px; 
         flex-shrink: 0;
         align-self: flex-end;
         justify-content: center;
 }
+/* сверху был гап 16 */
 .social-list-link{
         display: flex;
         width:100%;
@@ -461,6 +465,7 @@ margin-right: 120px;
         border-radius:50%;
         justify-content: center;
         align-items: center;
+        transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
         .social-list-link:hover,
