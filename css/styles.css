@@ -80,6 +80,7 @@ display: block;
 padding-top: 24px;
 padding-bottom: 24px;
 }
+
 .menu-list-item-link:hover{
     color: #404bbf;
 
@@ -87,6 +88,17 @@ padding-bottom: 24px;
 .menu-list-item-link:focus{color: #404bbf;}
 .contacts-item:hover{
     color: #404bbf;
+}
+.menu-list-item-link:active::after{
+    display: block;
+    content: "";
+    border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #404bbf;
+        margin-top: 20px;
 }
 /* ===========NAVIGATION CONTACTS=========== */
 .contacts-list{
@@ -127,11 +139,19 @@ p, .paragraphh{
 }
 /* =========== HERO + BUTTON =========== */
 .hero {
-    background: #2e2f42;
+    background-color: #2e2f42;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding: 188px 0;
+
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    /* 1440px 600px */
+    background-clip: padding-box;
 }
 
 .main-title {
@@ -182,6 +202,20 @@ p, .paragraphh{
 .benefits-list-item {
     width: calc((100% - 72px) / 4);
 }
+
+.benefits-icons-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+}
+
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -195,6 +229,8 @@ p, .paragraphh{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
 /* ===========CAPTIONS=========== */
 
 
@@ -253,17 +289,56 @@ border-radius: 0 0 4px 4px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-row-gap: 48px;
+row-gap: 48px;}
+
+
+.wrapper-portfolio{
+position: relative;
+    overflow: hidden;
 }
 .portfolio-list-item{
 width: calc((100% - 48px) / 3);
+    height: 420px;
 }
-.app-typ{
+.portfolio-list-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    overflow: auto;
+    transform:translateY(100%) ;
+transition: transform 250ms 
+   cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+
+
+.portfolio-list-item:hover .portfolio-overlay{
+    transform: translateY(0%)
+}
+.par-over{
+color: #f4f4fd;
+margin-top: 40px;
+margin-left: 32px;
+margin-right: 32px;
+}
+
+.app-typ {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-margin-bottom: 8px;
+    margin-bottom: 8px;
 }
+
 /* =========== FOOTER =========== */
 .foot{
     background-color: #2e2f42;
@@ -299,3 +374,67 @@ text-transform: uppercase;
         
 }
 
+.footer-media-title{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+.footer-media-list{
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+} 
+
+
+.foot-wrapper{
+    display: block;
+    gap: 16px;
+    justify-content: baseline;
+}
+/* ===========SOCIAL MEDIA ICONS============== */
+
+.social-list-icon{
+        fill: #fff;
+
+    }
+
+
+.social-list{
+    display: flex;
+        gap: 16px;
+        flex-shrink: 0;
+        align-self: flex-end;
+}
+.social-list-link{
+        display: flex;
+        width:40px;
+        height:40px;
+        background-color: #4d5ae5;
+        border-radius:50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .social-list-link:hover,
+                  .social-list-link:focus{
+                    background-color: #31d0aa;
+                  }
+
+.social-list-link-team:hover{
+    background-color: #404bbf;
+}
+
+.social-list-link-team {
+    display: flex;
+    gap: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
