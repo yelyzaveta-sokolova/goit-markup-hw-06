@@ -411,14 +411,13 @@ text-transform: uppercase;
         
 }
 
-.footer-media-parag{
-          
-    font-weight: 500;
+.footer-media-paragraph{
+font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        margin-bottom: 16px;
+margin-bottom: 16px;
 
 }
 .footer-media-list{
@@ -438,9 +437,12 @@ display: flex;
     margin-right: 120px;
  
 }
-.par-logo{
-margin-right: 120px;
+.logo-and-paragraph{
 margin-bottom: 16px;
+    display: flex;
+        gap: 16px;
+        align-items: baseline;
+        margin-right: 120px;
 }
 /* ===========SOCIAL MEDIA ICONS============== */
 
