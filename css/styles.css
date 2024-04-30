@@ -378,10 +378,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 100px 0;
 
 }
-.footer-soc-med{
-margin-right: 120px;
-
-}
 .foot-par {
     font-weight: 400;
         font-size: 16px;
@@ -389,7 +385,7 @@ margin-right: 120px;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
-
+margin-right: 120px;
 }
 
 .studio-foot {
