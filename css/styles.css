@@ -750,7 +750,7 @@ color: #4d5ae5;
 .feedback-form-checkbox:checked + .feedback-form-checkbox-label .feedback-form-own-checkbox {
    background-color:#404bbf;
    border-color: #404bbf;
-   fill:#FFFFFF;
+   fill:#F4F4FD;
 
     border: #404bbf;
 }
