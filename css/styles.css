@@ -587,7 +587,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px ;
+    padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -597,26 +597,33 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     justify-content: center;
     padding: 0;
     border: none;
-
+top: 24px;
+right: 24px;
+width: 24px;
+    height: 24px;
     fill:"#2E2F42";
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     line-height: 0;
     position: absolute;
-padding: 72px 24px 24px 24px;
+padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
     border-radius: 50%;
         stroke-width: 1px;
         stroke: rgba(0, 0, 0, 0.1);
-        width: 24px;
-        height: 24px;
+    cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus{
+    border: none;
 fill: #fff;
    background-color: #404bbf;
+}
+
+.modal-close-btn-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-form-description{
@@ -655,7 +662,7 @@ margin-bottom: 4px;
 }
 
 .feedback-form-field-wrapper{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .feedback-form-input-wrapper {
     position: relative;
@@ -682,7 +689,12 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     resize: none;
     padding: 8px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+        font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+            color: rgba(46, 47, 66, 0.4);
+            background-color: transparent;
+            outline: transparent;
 }
 
 .feedback-form-comment:focus{
@@ -715,7 +727,13 @@ color: #4d5ae5;
 .feedback-form-checkbox-wrapper{
     margin-bottom: 24px;
 }
-
+.feedback-form-checkbox-label{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
 .feedback-form-own-checkbox {
     border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
@@ -726,6 +744,7 @@ color: #4d5ae5;
        align-items: center;
         cursor: pointer;
         fill: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-form-checkbox:checked + .feedback-form-checkbox-label .feedback-form-own-checkbox {
@@ -795,6 +814,7 @@ font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
+        margin-bottom: 16px;
 }
 
 .subscribe-form-input{
@@ -871,6 +891,6 @@ margin-left: 16px;
         letter-spacing: 0.04em;
         text-align: center;
         color: #fff;
-        margin-bottom: 16px;
+
 }
     
