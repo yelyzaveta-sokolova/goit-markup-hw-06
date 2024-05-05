@@ -457,7 +457,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .logo-and-paragraph {
     display: block;
     align-items: baseline;
-    margin-right: 120px;
+
 }
 .foot-par {
     font-weight: 400;
@@ -556,3 +556,292 @@ display: flex;
                   .social-list-link:focus{
                     background-color: #31d0aa;
                   }
+
+
+/* ==========BACKDROP============ */
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 99999;
+opacity: 0;
+visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open{
+opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+border-radius: 4px;
+    width: 408px;
+    height: 584px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 72px 24px ;
+}
+
+.modal-close-btn{
+    padding: 0;
+    border: none;
+
+    fill:"#2E2F42";
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    line-height: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    
+    background-color: #e7e9fc;
+    border-radius: 100%;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.1);
+        width: 24px;
+        height: 24px;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+fill: #fff;
+   background-color: #404bbf;
+}
+
+.feedback-form-description{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 16px;
+}
+
+.feedback-form-field-label{
+display: block;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+margin-bottom: 4px;
+}
+
+.feedback-form-input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        padding-left: 38px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-input:focus{
+    border-color: #4d5ae5;
+    outline:none;
+}
+
+.feedback-form-field-wrapper{
+    margin-bottom: 8px;
+}
+.feedback-form-input-wrapper {
+    position: relative;
+}
+
+.feedback-form-field-icon{
+    fill: #2e2f42;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+transform: translateY(-50%);
+transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-input:focus + .feedback-form-field-icon{
+    fill: #4d5ae5;
+}
+
+.feedback-form-comment{
+   width: 100%;
+   height: 120px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    resize: none;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.feedback-form-comment:focus{
+    border-color:#4d5ae5 ;
+    outline: transparent;
+}
+
+.feedback-form-comment::placeholder{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.privacy-policy-text{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
+.privacy-policy-link{
+line-height: 1.3;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #4d5ae5;
+}
+
+.feedback-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
+
+.feedback-form-own-checkbox {
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        width: 16px;
+        height: 16px;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+        cursor: pointer;
+        fill: transparent;
+}
+
+.feedback-form-checkbox:checked + .feedback-form-checkbox-label .feedback-form-own-checkbox {
+   background-color:#404bbf;
+   border-color: #404bbf;
+   fill:#FFFFFF;
+
+    border: #404bbf;
+}
+
+.feedback-form-checkbox:focus+.feedback-form-checkbox-label .feedback-form-own-checkbox{
+    outline:2px solid rgba(0,0,255,0.5);
+}
+
+.feedback-form-submit{
+    border-radius: 4px;
+        padding: 16px 32px;
+        width: 169px;
+        height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+
+}
+
+.feedback-form-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.feedback-form-btn-text{
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+
+/* ФОРМА В ФУТЕРЕ SUBSCRIBE */
+
+.subscribe-form{
+    display: flex;
+    align-items: center;
+
+}
+.subscribe-form-wrapper {
+        display: block;
+            align-items: baseline;
+            margin-left: 80px;
+}
+
+.subscribe-form-text{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+
+.subscribe-form-input{
+      
+            padding-left: 16px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #fff;
+                border-radius: 4px;
+                width: 264px;
+                height: 40px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                background-color: #2e2f42;
+                margin-top: 16px;
+        }
+        
+        .subscribe-form-input:focus {
+            border-color: #4d5ae5;
+            outline: none;
+        }
+
+.subscribe-form-input::placeholder{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+
+.subscribe-btn-wrapper{
+display: block;
+    margin-left: 24px;
+}
+
+.subscribe-btn{
+    display: block;
+    border-radius: 4px;
+
+        width: 165px;
+        height: 40px;
+        background: #4d5ae5;
+}
+
+.subscribe-btn-wrapper {
+            position: relative;
+        }
+
+.subscribe-btn-icon {
+    fill:#fff; 
+    position: absolute;
+    right: 10px;
+margin-left: 24px;
+
+    top: 50%;
+}
+
+.subscribe-btn-text{
+
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+}
+    
