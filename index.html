@@ -20,7 +20,7 @@
   <body>
     <!-- ======== HEADER ========= -->
     <header class="page-header">
-      <div class="container head-page">
+      <div class="container page-header-container">
         <nav class="menu">
           <a href="./index.html" class="logo-header"
             >Web<span class="studio">Studio</span></a
@@ -33,6 +33,11 @@
             <li><a href="" class="menu-list-link">Contacts </a></li>
           </ul>
         </nav>
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -70,7 +75,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="caption-three">Strategy</h3>
+              <h3 class="caption-three-benefits">Strategy</h3>
               <p class="paragraphh">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -83,7 +88,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="caption-three">Punctuality</h3>
+              <h3 class="caption-three-benefits">Punctuality</h3>
               <p class="paragraphh">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -96,7 +101,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="caption-three">Diligence</h3>
+              <h3 class="caption-three-benefits">Diligence</h3>
               <p class="paragraphh">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -109,7 +114,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="caption-three">Technologies</h3>
+              <h3 class="caption-three-benefits">Technologies</h3>
               <p class="paragraphh">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -522,7 +527,7 @@
       </div>
     </footer>
     <!-- ========== BACKDROP ============ -->
-    <div class="backdrop">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -531,11 +536,11 @@
         </button>
         <p class="feedback-form-description">
           Leave your contacts and we will call you back
-        </p>
-        <!-- ФОРМА -->
-        <form class="feedback-form">
-          <!-- ЕЛЕМЕНТ 1 name -->
-          <div class="feedback-form-field-wrapper">
+        </p> -->
+    <!-- ФОРМА -->
+    <!-- <form class="feedback-form"> -->
+    <!-- ЕЛЕМЕНТ 1 name -->
+    <!-- <div class="feedback-form-field-wrapper">
             <label for="user-name" class="feedback-form-field-label"
               >Name</label
             >
@@ -553,10 +558,10 @@
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
-          </div>
-          <!-- ЕЛЕМЕНТ 2  phone -->
+          </div> -->
+    <!-- ЕЛЕМЕНТ 2  phone -->
 
-          <div class="feedback-form-field-wrapper">
+    <!-- <div class="feedback-form-field-wrapper">
             <label for="user-tel" class="feedback-form-field-label"
               >Phone</label
             >
@@ -574,10 +579,10 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
-          </div>
+          </div> -->
 
-          <!-- ЕЛЕМЕНТ 3  email  -->
-          <div class="feedback-form-field-wrapper">
+    <!-- ЕЛЕМЕНТ 3  email  -->
+    <!-- <div class="feedback-form-field-wrapper">
             <label for="user-email" class="feedback-form-field-label"
               >Email</label
             >
@@ -594,10 +599,10 @@
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-          </div>
+          </div> -->
 
-          <!-- ЕЛЕМЕНТ 4 -->
-          <div class="feedback-form-field-wrapper-sixteen">
+    <!-- ЕЛЕМЕНТ 4 -->
+    <!-- <div class="feedback-form-field-wrapper-sixteen">
             <label for="user-comment" class="feedback-form-field-label"
               >Comment</label
             >
@@ -608,9 +613,9 @@
               required
               placeholder="Text input"
             ></textarea>
-          </div>
-          <!-- ЧЕКБОКС-->
-          <div class="feedback-form-checkbox-wrapper">
+          </div> -->
+    <!-- ЧЕКБОКС-->
+    <!-- <div class="feedback-form-checkbox-wrapper">
             <input
               class="feedback-form-checkbox visually-hidden"
               type="checkbox"
@@ -633,14 +638,88 @@
               I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
-          </div>
-          <!-- КНОПКА ОТПРАВИТЬ  -->
-          <div class="feedback-form-btn-wrapper">
+          </div> -->
+    <!-- КНОПКА ОТПРАВИТЬ  -->
+    <!-- <div class="feedback-form-btn-wrapper">
             <button type="submit" class="feedback-form-submit">
               <span class="feedback-form-btn-text">Send</span>
             </button>
           </div>
         </form>
+      </div>
+    </div> -->
+    <!-- =========== MOBILE MENU ============ -->
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list-item item-studio">
+              <a href="./index.html" class="mobile-menu-list-link current">
+                Studio
+              </a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link">Portfolio </a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link">Contacts </a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-contacts">
+          <ul class="mobile-contacts-list">
+            <li class="mobile-contacts-item item-tel">
+              <a href="tel:+110001111111" class="mobile-contacts-link"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="mobile-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-link">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-social-media">
+          <ul class="mobile-social-list">
+            <li class="mobile-social-list-item">
+              <a
+                href="https://www.instagram.com/"
+                class="mobile-social-list-link"
+              >
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="" class="mobile-social-list-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
