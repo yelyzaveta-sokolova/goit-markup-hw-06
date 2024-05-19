@@ -132,7 +132,11 @@
             <!-- 1 element -->
             <li class="team-list-item">
               <img
-                src="./images/Team/img1.jpg"
+                srcset="
+                  ./images/Team/team1-min.jpg   1x,
+                  ./images/Team/team1@2-min.jpg 2x
+                "
+                src="./images/Team/team1-min.jpg"
                 alt=" Photo Mark Guerrero"
                 width="264"
                 height="260"
@@ -178,7 +182,11 @@
             <!-- 2 element -->
             <li class="team-list-item">
               <img
-                src="./images/Team/img2.jpg"
+                srcset="
+                  ./images/Team/team2-min.jpg   1x,
+                  ./images/Team/team2@2-min.jpg 2x
+                "
+                src="./images/Team/team2-min.jpg"
                 alt=" Photo Tom Ford"
                 width="264"
                 height="260"
@@ -224,7 +232,11 @@
             <!-- 3 element -->
             <li class="team-list-item">
               <img
-                src="./images/Team/img3.jpg"
+                srcset="
+                  ./images/Team/team3-min.jpg   1x,
+                  ./images/Team/team3@2-min.jpg 2x
+                "
+                src="./images/Team/team3-min.jpg"
                 alt=" Photo Camila Garcia "
                 width="264"
                 height="260"
@@ -270,7 +282,11 @@
             <!-- 4 element -->
             <li class="team-list-item">
               <img
-                src="./images/Team/img4.jpg"
+                srcset="
+                  ./images/Team/team4-min.jpg   1x,
+                  ./images/Team/team4@2-min.jpg 2x
+                "
+                src="./images/Team/team4-min.jpg"
                 alt=" Photo Daniel Wilson "
                 width="264"
                 height="260"
@@ -325,12 +341,37 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img10.jpg"
-                  alt=" Photo Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-1.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-1@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-1.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-1.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-1@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-1.jpg"
+                    alt=" Photo Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -346,12 +387,37 @@
 
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img5.jpg"
-                  alt=" Photo Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-2.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-2@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-2.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-2.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-2@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-2.jpg"
+                    alt=" Photo Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -367,12 +433,37 @@
 
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img6.jpg"
-                  alt=" Photo Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-3.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-3@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-3.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-3@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-3.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-3@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-3.jpg"
+                    alt=" Photo Meditation App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -389,12 +480,37 @@
 
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img7.jpg"
-                  alt=" Photo Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-4.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-4@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-4.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-4@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-4.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-4@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-4.jpg"
+                    alt=" Photo Taxi Service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -411,12 +527,37 @@
 
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img8.jpg"
-                  alt=" Photo Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-5.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-5@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-5.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-5@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-5.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-5@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-5.jpg"
+                    alt=" Photo Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -433,12 +574,37 @@
 
             <li class="portfolio-list-item">
               <div class="wrapper-portfolio">
-                <img
-                  src="./images/Portfolio/img9.jpg"
-                  alt=" Photo Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-desc-6.jpg    1x,
+                      ./images/Portfolio/portfolio-desc-6@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-tab-6.jpg    1x,
+                      ./images/Portfolio/portfolio-tab-6@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/portfolio-mob-6.jpg    1x,
+                      ./images/Portfolio/portfolio-mob-6@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/Portfolio/portfolio-desc-6.jpg"
+                    alt=" Photo Online Courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="par-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -527,7 +693,7 @@
       </div>
     </footer>
     <!-- ========== BACKDROP ============ -->
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -536,11 +702,11 @@
         </button>
         <p class="feedback-form-description">
           Leave your contacts and we will call you back
-        </p> -->
-    <!-- ФОРМА -->
-    <!-- <form class="feedback-form"> -->
-    <!-- ЕЛЕМЕНТ 1 name -->
-    <!-- <div class="feedback-form-field-wrapper">
+        </p>
+        <!-- ФОРМА -->
+        <form class="feedback-form">
+          <!-- ЕЛЕМЕНТ 1 name -->
+          <div class="feedback-form-field-wrapper">
             <label for="user-name" class="feedback-form-field-label"
               >Name</label
             >
@@ -558,10 +724,10 @@
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
-          </div> -->
-    <!-- ЕЛЕМЕНТ 2  phone -->
+          </div>
+          <!-- ЕЛЕМЕНТ 2  phone -->
 
-    <!-- <div class="feedback-form-field-wrapper">
+          <div class="feedback-form-field-wrapper">
             <label for="user-tel" class="feedback-form-field-label"
               >Phone</label
             >
@@ -579,10 +745,10 @@
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
-          </div> -->
+          </div>
 
-    <!-- ЕЛЕМЕНТ 3  email  -->
-    <!-- <div class="feedback-form-field-wrapper">
+          <!-- ЕЛЕМЕНТ 3  email  -->
+          <div class="feedback-form-field-wrapper">
             <label for="user-email" class="feedback-form-field-label"
               >Email</label
             >
@@ -599,10 +765,10 @@
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
-          </div> -->
+          </div>
 
-    <!-- ЕЛЕМЕНТ 4 -->
-    <!-- <div class="feedback-form-field-wrapper-sixteen">
+          <!-- ЕЛЕМЕНТ 4 -->
+          <div class="feedback-form-field-wrapper-sixteen">
             <label for="user-comment" class="feedback-form-field-label"
               >Comment</label
             >
@@ -613,9 +779,9 @@
               required
               placeholder="Text input"
             ></textarea>
-          </div> -->
-    <!-- ЧЕКБОКС-->
-    <!-- <div class="feedback-form-checkbox-wrapper">
+          </div>
+          <!-- ЧЕКБОКС-->
+          <div class="feedback-form-checkbox-wrapper">
             <input
               class="feedback-form-checkbox visually-hidden"
               type="checkbox"
@@ -638,16 +804,16 @@
               I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
-          </div> -->
-    <!-- КНОПКА ОТПРАВИТЬ  -->
-    <!-- <div class="feedback-form-btn-wrapper">
+          </div>
+          <!-- КНОПКА ОТПРАВИТЬ  -->
+          <div class="feedback-form-btn-wrapper">
             <button type="submit" class="feedback-form-submit">
               <span class="feedback-form-btn-text">Send</span>
             </button>
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- =========== MOBILE MENU ============ -->
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
